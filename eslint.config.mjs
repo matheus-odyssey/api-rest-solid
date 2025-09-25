@@ -18,7 +18,7 @@ export default [
     },
     rules: {
       // === Estilo já configurado ===
-      semi: ['error', 'always'], // exigir ponto e vírgula
+      semi: ['error', 'never'], // proíbe ponto e vírgula
       'no-trailing-spaces': 'error', // proibir espaços ao final da linha
       'eol-last': ['error', 'always'], // exigir linha em branco no final do arquivo
       'no-multiple-empty-lines': ['error', { max: 1 }], // permitir apenas uma linha em branco consecutiva
