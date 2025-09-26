@@ -38,7 +38,13 @@ export default [
       'object-shorthand': ['error', 'always'], // exige o uso da short syntax em objetos
       'operator-linebreak': ['error', 'before'], // define onde a quebra de linha deve ocorrer em expressões com operadores
       'multiline-ternary': ['error', 'always-multiline'], // garante que ternário fique em múltiplas linhas quando apropriado
-      'no-unused-vars': 'error', // proibe variáveis declaradas mas não utilizadas na aplicação
+      'no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ], // proibe variáveis declaradas mas não utilizadas na aplicação
     },
   },
 ];
